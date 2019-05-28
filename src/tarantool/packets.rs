@@ -41,7 +41,7 @@ pub enum TarantoolRequest {
 #[derive(Debug)]
 pub struct TarantoolResponse {
      code: u64,
-     data: Bytes,
+     pub data: Bytes,
 }
 
 #[derive(Debug,Clone)]
